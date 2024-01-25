@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vd netflix clone</title>
+    <style>
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    background: black;
+    color: white;
+}
+.header{
+    width: 100%;
+    height: 100vh;
+    background-image:linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),url(./header-image.png);
+    background-size: cover;
+    background-position: center;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+.logo{
+    width: 150px;
+    cursor: pointer;
+}
+nav button{
+    border: 0;
+    outline: 0;
+    background: red;
+    color: white;
+    padding: 7px 20px;
+    font-size: 12px;
+    border-radius: 4px;
+}
+.lan-btn{
+    display: inline-flex;
+    align-items: center;
+    background: transparent;
+    border: 1px solid white;
+    padding: 7px 10px;
+}
+.lan-btn img{
+    width: 10px;
+    margin-left: 10px;
+}
+.hc{
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    transform: translate(-50px,-50px);
+    text-align: center;
+    margin: 100px;
+}
+.hc h1{
+font-size: 60px;
+line-height: 70px;
+font-weight: 600;
+max-width: 650px;
+
+}
+.hc h3{
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+.email-signup{
+    background: white;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    overflow: hidden;
+
+}
+.email-signup input{
+    flex: 1;
+    border: 0;
+    outline: 0;
+    margin-left: 20px;
+}
+.email-signup button{
+    background: red;
+    border: 0;
+    outline: 0;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 15px 30px;
+
+}
+.middle{
+padding: 50px 12%;
+font-size: 22px;
+}
+.row{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 5px 0;
+}
+.text-col{
+    flex-basis: 50%;
+    margin: 20px;
+
+}
+.img-col{
+    flex-basis: 50%;
+    margin: 20px;
+
+}
+.img-col img{
+    display: block;
+    width: 90%;
+    margin: auto;
+
+}
+    </style>
+</head>
+<body>
+    <div class="header">
+        <nav>
+            <img src="./logo.png" class="logo" >
+            <div>
+                <button class="lan-btn"> English <img src="./down-icon.png"></button>
+                <button > Sign In</button>
+            </div>
+        </nav>
+        <div class="hc">
+            <h1>
+                Unlimited movies, and TY shows and more.</h1>
+                <h3> Watch anywhere.cancel anytime.</h3>
+                <p> Redy to watch? Enter your email to create or restart your membership</p>
+            <form class="email-signup" >
+                <input type="email" placeholder="Enter your E-mail" required>
+                <button type="submit"> Get Started</button>
+            </form>
+        </div>
+    </div>
+        <div class="middle">
+            <div class="row">
+                <div class="text-col">
+                    <h2>Enjoy on your Tv</h2>
+                    <p> Watch on smart TV's playStation,Xbox,Chromecast,AppleTV,BLu-rayPlayers and more.</p>
+                </div>
+<div class="img-col">
+    <img src="./feature-1.png" >
+</div>
+            </div>
+        </div>
+        
+</body>
+</html>
